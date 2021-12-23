@@ -41,12 +41,9 @@ function f(uint256 ipt) public  pure returns (uint256) {
         if (i == start){
             x_i = 1 * SCALE;
         }else if (i > start){
-            uint256 x_ii= divd(uint256(1),uint256(2**(i-start)),18);
-            x_i = x_ii;
+            x_i= divd(uint256(1),uint256(2**(i-start)),18);
         }else if (i < start){
-            uint256 base = 2;
-            uint256 exponent = start-i;
-            x_i = (base**exponent) * SCALE; 
+            x_i = (2**(start-i)) * SCALE; 
         }
 
 
