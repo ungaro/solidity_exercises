@@ -1,3 +1,36 @@
+# Solidity Exercises
+
+1- Turn this python code into Solidity.
+
+```python
+
+import math
+
+start=7
+end=4
+
+
+def f(ipt):
+    opt = 0
+    for i in range(start + end + 1):
+        x_i = pow(2, start-i)
+        ipt_i = math.exp(x_i)
+
+        if (ipt >= ipt_i):
+            ipt /= ipt_i
+            opt += x_i
+
+    return opt 
+
+
+
+print("result: ",f(4))
+```
+
+[Solution -> contracts/Question.sol](contracts/Question.sol)
+
+
+
 # Advanced Sample Hardhat Project
 
 This project demonstrates an advanced Hardhat use case, integrating other tools commonly used alongside Hardhat in the ecosystem.
