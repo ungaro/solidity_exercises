@@ -31,6 +31,11 @@ print("result: ",f(4))
 
 [Deployed Contract (Ropsten)](https://ropsten.etherscan.io/address/0x0A553FAa97F011F72dBa798fA04A1C4F7bA16151#readContract)
 
+```
+Output with 18 precision
+1375000000000000000 is 1.375
+```
+
 # Commands
 
 ```shell
